@@ -15,7 +15,8 @@ services:
     restart: no
     ports:
       # Game server
-      - "52000:52000"
+      - "52000:52000/tcp"
+      - "52000:52000/udp"
       # Web server
       - "52099:52099"
       # Login server
